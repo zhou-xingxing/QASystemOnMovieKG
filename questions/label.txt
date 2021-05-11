@@ -48,10 +48,10 @@
 5    nnt的详细信息
 5    nnt的信息
 6    nnt演过哪些ng电影
-6    nnt演哪些ng电影
+6    nnt出演过哪些ng电影
 6    nnt演过的ng电影
 6    nnt演过什么ng电影
-6    nnt演过的ng电影
+6    nnt出演的ng电影
 6    nnt演过的ng电影有哪些
 6    nnt出演的ng电影有哪些
 7    nnt演了什么电影
