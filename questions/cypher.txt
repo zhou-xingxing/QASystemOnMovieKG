@@ -1,0 +1,16 @@
+0 电影的评分 "match (m:Movie)-[]->() where m.title='{movie_name}' return m.rating"
+1 电影的上映时间  "match(m:Movie)-[]->() where m.title='{movie_name}' return m.releasedate"
+2 电影的类型 "match(m:Movie)-[r:is]->(b) where m.title='{movie_name}' return b.name"
+3 电影的简介 "match(m:Movie)-[]->() where m.title='{movie_name}' return m.introduction"
+4 参演电影的演员 "match(n:Person)-[r:actedin]->(m:Movie) where m.title='{movie_name}' return n.name"
+5 演员的简介 "match(n:Person)-[]->() where n.name='{actor_name}' return n.biography"
+6 演员演过的某一类型的电影 "match(n:Person)-[]->(m:Movie) where n.name='{actor_name}' return m.title"
+                       "match(m:Movie)-[r:is]->(t) where m.title='{movie_name}' return t.name"
+7 演员演过的电影 "match(n:Person)-[]->(m:Movie) where n.name='{actorname}' return m.title"
+8 演员演过的评分大于x的电影 "match(n:Person)-[r:actedin]->(m:Movie) where n.name='{actor_name}' and m.rating>={x} return m.title"
+9 演员演过的评分小于x的电影 "match(n:Person)-[r:actedin]->(m:Movie) where n.name='{actor_name}' and m.rating<{x} return m.title"
+10 演员演过哪些类型的电影 "match(n:Person)-[]->(m:Movie) where n.name='{actor_name}' return m.title"
+                      "match(m:Movie)-[r:is]->(t) where m.title='{movie_name}' return t.name"
+11 演员A和演员B合作过的电影 同7，取交集
+12 演员一共演过多少电影 同7，统计数量
+13 演员的生日 "match(n:Person)-[]->() where n.name='{actor_name}' return n.birth"
