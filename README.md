@@ -1,6 +1,12 @@
 # QASystemOnMovieKG
 基于知识图谱的电影信息问答系统
 
+开发时基于python3.6
+
+部署到服务器python3.8的环境时遇到了sklearn版本不兼容的问题，参考如下方式解决
+
+[python3.8使用scikit-learn0.20.2时报错TypeError: an integer is required (got type bytes)_congcong_i的博客-CSDN博客](https://blog.csdn.net/congcong_i/article/details/116500921)
+
 ## 使用方式
 
 1. 安装环境
